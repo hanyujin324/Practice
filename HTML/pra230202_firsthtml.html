@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    h1{
+      color: rgb(224, 178, 26);
+      /*color:linear-gradient(left rgb(243, 93, 6), rgb(226, 212, 185));*/
+      text-align: center;
+      margin-bottom: 100px;
+      text-shadow: 1px 1px rgb(241, 195, 68);
+
+    }
+    h3{
+      color:rgb(223, 171, 1);
+    }
+    body{
+      background-color: rgb(255, 253, 221);
+    }
+    .box{
+      background: rgb(255, 250, 177);
+      color: rgb(0, 2, 3);
+      margin:50px;
+      padding:50px;
+    }
+    nav, article,aside, footer{
+    border:1px solid gray; margin: 5px;padding:8px;width: 1000px;
+  }
+  h6{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  tr,th,td{
+    display: inline;
+  }
+
+
+    
+  </style>
+  <title>사진 팁</title>
+</head>
+<body>
+  <header>
+    <h1>
+      사진 TIP📸
+    </h1>
+    <nav>
+      <h6>먼저 체크하기✔</h6>
+      >자신의 폰 기종은?
+      <input type="radio" name="phone" value="갤럭시" checked>갤럭시
+      <input type="radio" name="phone" value="아이폰">아이폰
+      <input type="radio" name="phone" value="그외">그외
+      <div>
+        >가지고 있는 카메라는?
+        <input type="checkbox" name="camera" value="디지털 카메라">디지털 카메라
+        <input type="checkbox" name="camera" value="폰"checked>폰
+        <input type="checkbox" name="camera" value="폴라로이드">폴라로이드
+        <input type="checkbox" name="camera" value="DSLR 카메라">DSLR 카메라
+      </div>
+    </nav>
+  </header>
+<section>
+ <a href="./exam1.txt" style="color: green; text-decoration: none;">사전</a>
+ <div class="tip">
+  <div class="box">
+ <h3>1. 인물 사진을 잘 찍는 방법</h3>
+  <ul>
+    <li>
+      <p>사진을 찍을때 사진 보정어플이 아닌 <b>기본카메라</b>를 이용하기</p>
+      <p> ㄴ보정어플은 화질이 안 좋기때문에 기본카메라로 찍은 뒤에 사진 색감을 보정한다.</p> 
+    </li>
+    <li>
+      <p><b>수평</b>으로 찍기</p>
+      <p> ㄴ수평으로 찍는 것이 어렵다면 카메라 설정을 눌러 격자를 on한다.</p>
+      <button onclick="click1()" style=" border:none;font-weight: bold; background: rgb(255, 250, 177); color: rgb(255, 154, 22)" ;><b>Click!</b>이미 수평으로 찍지못한 사진이 있다면?</button>
+      <p id="exam1"></p>
+      <script>
+        function click1() {
+          document.getElementById('exam1').innerHTML= '갤러리에 있는 수평 설정으로 맞추면 된다.';
+        }   
+      </script>
+    </li>
+    <li>
+      <span style="background:linear-gradient(to top, #FFE400 50%, transparent 50%)">애매하게 자르지 말기</span>
+      <p> ㄴ사람을 찍을때 발목까지 나오게 하거나, 허리에서 자르는 방법은 X</p>
+      <p> ㄴ발목이 아닌 발까지 나오게하고, 허리가 아닌 허벅지~종아리 사이에서 자른다.</p>
+    </li>
+    <li>
+      <p>사람이 바라보는 <b>시선</b>에 유의하면서 찍기</p>
+      <p> ㄴ찍히는 사람이 바라보는 시선도 중요하다. 예를들어 오른쪽에 있는 작품을 보고 있는데 [사람][작품]이 아닌 왼쪽에 있는 [작품][사람]이라면 사진이 답답해보이게 된다.</p>
+    </li>
+  </ul>
+  <div style="padding:30px">
+  </div>
+  <table>
+    <tr>
+      <th style="text-align:left; color:rgb(236, 141, 16)";>올바르지 않는 사진</th>
+    </tr>
+    <tr> 
+      <td><img src="./images/tip1.png" alt="tip1" width="200px" height="200px"> </td><td><img src="./images/tip2.png" alt="tip2" width="200px" height="200px"></td><td><img src="./images/tip3.png" alt="tip3" width="200px" height="200px"></td>
+    </tr>
+  </table>
+<div style="padding:20px">
+</div>
+  <table>
+    <tr>
+      <th style="text-align:left; color:rgb(45, 31, 243)";>올바른 사진</th>
+    </tr>
+    <tr> 
+      <td><img src="./images/tip4.png" alt="tip4" width="200px" height="200px"> </td><td><img src="./images/tip5.png" alt="tip5" width="200px" height="200px"></td><td><img src="./images/tip6.png" alt="tip6" width="200px" height="200px"></td>
+    </tr>
+  </table>
+ </div>
+ <div class="box">
+    <h3>
+      2. 음식, 풍경사진 잘 찍는 방법
+     </h3>/
+       <p>음식사진은 <span style="background:linear-gradient(to top, #FFE400 50%, transparent 50%)">인물사진</span>으로 촬영하기</p>
+       <p>ㄴ인물모드로 찍으면 찍는 음식을 제외한 나머지는 페이드아웃으로 음식사진이 뚜렷하게 보인다.</p>
+     </div>
+  </div>
+
+  <div class="box">
+ <h3>
+    3. 보정하는 법도 중요
+  </h3>
+    <p>- 기본카메라안에 있는 보정법</p>
+    <p>밝기, 그림자, 하이라이트, 휘도, 대비, 채도, 그레인 조절방법<p style="font-size: 10px;">*단어 설명은 사전에 나와있음.*</p>
+    <button onclick="click2()" style=" border:none; font-weight: bold; background: rgb(255, 250, 177); color: rgb(255, 154, 22)" ;><b>Click!</b>아날로그느낌 보정법</button>
+    <p id="exam2"></p>
+    <script>
+      function click2(){
+        document.getElementById('exam2').innerHTML='밝기:-30, 휘도:20, 그림자:-30';
+      }   
+   </script>
+  </div>
+ 
+ 
+</section>
+  <footer>
+    문의사항:<a href="maileto:hanyujin32432@gamil.com">hanyujin32432@gmail.com</a>
+  </footer>
+</body>
+</html>
